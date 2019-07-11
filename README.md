@@ -38,7 +38,7 @@ Und zu guter Letzt:
 
 >sudo service nodered restart
 
-####Node-Red starten und einrichten
+#### Node-Red starten und einrichten
 Jetzt ist es Zeit, das erste Mal Node-Red zu starten. Dazu startet man den Browser und gibt die lokale IP-Adresse mit dem Port 1880 ein.
 
 ![Node-Red Oberfläche](Bilder/Node-Red.jpg "Node-Red Oberfläche")
@@ -77,7 +77,7 @@ Nun nimmt man noch einen "gauge" Anzeige Baustein aus der dashboard Funktionslei
 
 Nach einem Klick auf Implementieren, ist Zeit für einen ersten Kommunikationstest. Das Dashboard kann über ipAdresse:port/ui im Browser aufgerufen werden. Auf den zweiten MQTT- Pfad wird später nocheinmal eingegangen.
 
-###2. Programmierung des Espressif8266
+### 2. Programmierung des Espressif8266
 Der Espressif wird hier über die Visual Studio Code Entwicklungsumgebung programmiert. Eine kurze Anleitung gibt es hier:
 [https://diyprojects.io/install-ide-platformio-extension-visual-studio-code-vscode-windows-32-bit-linux/#.XRnrzK9R2Uk](https://diyprojects.io/install-ide-platformio-extension-visual-studio-code-vscode-windows-32-bit-linux/#.XRnrzK9R2Uk)
 ```cpp
@@ -286,7 +286,7 @@ void reconnect() {
 ```
 Hier sind die Unterprogramme aufgeführt. Die Routine setLine setzt über eine for-Schleife die entsprechenden Pixel der LED Matrix. Des Weiteren ist hier die callback und reconnect Routine definiert. In der reconnect Routine wird wieder das grüne LED Lauflicht auf der Matrix angezeigt, um zu signalisieren, dass ein Verbindungsaufbau durchegeführt wird.
 
-###3. Telegram-Bot einrichten
+### 3. Telegram-Bot einrichten
 Zunächst muss die Telegram-App aus dem AppStore auf ein mobiles Endgerät installiert werden. Wenn ein Account erstellt wurde, kann [Telegram-Web](https://web.telegram.org/) über den Browser am PC aufgerufen werden.
 Jetzt wird über die Suchleiste
 
@@ -314,7 +314,7 @@ angezeigt. Nun müssen im Chatfenster des erstellten Bots ein paar Nachrichten v
 
 Die "id" wichtig für die Einstellungen in Node-Red.
 
-####Zurück zu Node-Red
+#### Zurück zu Node-Red
 Nun kann man in Node-Red den Funktionblock "Telegram sender" aus der Leiste ziehen und die nötigen Einstellungen konfigurieren. Es muss der Bot-Name, Token (API) und die Chat-ID eingetragen werden.
 Damit ist Node-Red in der Lage, Telegram-Nachrichten über den Bot an ein mobiles Endgerät zu schicken.
 Es muss nun noch ein function Block aus der Leiste gezogen und wie folgt konfiguriert werden:
