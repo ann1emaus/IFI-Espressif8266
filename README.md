@@ -16,7 +16,7 @@ Hardware Komponenten für das Projekt:
 * Diverse Jumper Kabel
 * evtl. Steckbrett
 
-![schaltplan](Schaltplan_Steckplatine.png "Schaltplan")
+![schaltplan](Bilder/Schaltplan_Steckplatine.png "Schaltplan")
 In der obigen Abbildung ist der Schaltplan dargestellt. Neben den Versorgungsleitungen (rot für 3,3V und blau für GND) muss der des analogen Pins von der horizontalen Achse des Joysticks an Pin A0 des ESP8266 angeschlossen werden. Da es leider keinen weiteren analogen Eingang gibt, kann die Vertikalachse nicht mit eingebunden werden. Der digital Pin für den Taster des Joysticks ist an Pin D4 und die Datenleitung für die 8x8 RGB LED Matrix ist an Pin D2 des ESP8266 anzuschließen.
 
 ###1. Einrichten des MQTT Servers auf dem RPi mit Node-Red
@@ -24,7 +24,7 @@ Auf dem RPi muss das Betriebssystem Raspbian mit Desktop laufen und eine Verbind
 
 Nachdem der RPi nun läuft, empfiehlt es sich jetzt eine SSH Verbindung mit diesem aufzubauen, um ihn bequem am PC zu konfigurieren. Dies kann man über das Programm Putty ([Download Putty](https://www.putty.org)) realisieren.
 
-![putty](putty.jpg "Putty SSH Verbindung")
+![putty](Bilder/putty.jpg "Putty SSH Verbindung")
 
 Sobald nun eine Verbindung besteht, muss als erstes NodeJs und Node-Red installiert bzw. geupgraded werden. Dazu wird folgendes Kommando ins Terminal des RPi's eingetippt:
 
@@ -41,9 +41,9 @@ Und zu guter Letzt:
 ####Node-Red starten und einrichten
 Jetzt ist es Zeit, das erste Mal Node-Red zu starten. Dazu startet man den Browser und gibt die lokale IP-Adresse mit dem Port 1880 ein.
 
-![Node-Red Oberfläche](Node-Red.jpg "Node-Red Oberfläche")
+![Node-Red Oberfläche](Bilder/Node-Red.jpg "Node-Red Oberfläche")
 
-Als erstes müssen ein paar Sachen installiert werden. Dies geschieht über das Drop-Down Menü oben rechts in der Ecke ![dropdown](dropdown.png) über den Reiter "Palette verwalten".
+Als erstes müssen ein paar Sachen installiert werden. Dies geschieht über das Drop-Down Menü oben rechts in der Ecke ![dropdown](Bilder/dropdown.png) über den Reiter "Palette verwalten".
 Es öffnet sich die Palette und man klickt nun auf den Reiter "Installieren".
 Nun kann man nach Node-Red-Paketen suchen wie zum Beispiel:
 
@@ -63,16 +63,16 @@ Nun ist Node-Red einsatzbereit. Es gilt nun die MQTT-Einstellungen vorzunehmen.
 Als erstes benötigen wir einen Mosca MQTT broker Baustein, den man links aus der Eingabe Funktionsleiste ziehen und auf der Arbeitsfläche ablegt.
 Ein Doppelklick auf den Baustein öffnet die Einstellungen, die wie folgt vorzunehmen sind:
 
-![Mosca MQTT broker](mosca_broker.jpg "Mosca Broker Einstellungen")
+![Mosca MQTT broker](Bilder/mosca_broker.jpg "Mosca Broker Einstellungen")
 
 Jetzt werden noch zwei mqtt Eingabe-Bausteine benötigt. Die Einstellungen hierfür sind wie folgt vorzunehmen:
 
-![mqtt_achse](mqtt_achse.jpg "MQTT Achse")
-![mqtt_switch](mqtt_switch.jpg "MQTT Switch")
+![mqtt_achse](Bilder/mqtt_achse.jpg "MQTT Achse")
+![mqtt_switch](Bilder/mqtt_switch.jpg "MQTT Switch")
 
 Nun nimmt man noch einen "gauge" Anzeige Baustein aus der dashboard Funktionsleiste und konfiguriert diesen.
 
-![gauge](gauge.jpg "Gauge Einstellungen")
+![gauge](Bilder/gauge.jpg "Gauge Einstellungen")
 
 
 Nach einem Klick auf Implementieren, ist Zeit für einen ersten Kommunikationstest. Das Dashboard kann über ipAdresse:port/ui im Browser aufgerufen werden. Auf den zweiten MQTT- Pfad wird später nocheinmal eingegangen.
@@ -319,11 +319,11 @@ Nun kann man in Node-Red den Funktionblock "Telegram sender" aus der Leiste zieh
 Damit ist Node-Red in der Lage, Telegram-Nachrichten über den Bot an ein mobiles Endgerät zu schicken.
 Es muss nun noch ein function Block aus der Leiste gezogen und wie folgt konfiguriert werden:
 
-![message](message.jpg "Message Einstellungen")
+![message](Bilder/message.jpg "Message Einstellungen")
 
 Bisher existiert noch keine Entprellung des Tasters. Damit der Telegram-Chat nicht mit einer Fülle von Nachrichten pro Taster-Druck geflutet wird, kann mittels des Funktionsblocks "delay" der Durchsatz an Nachrichten reduziert werden. Dafür wurden folgende Einstellungen getätigt:
 
-![delay](delay.jpg "Delay Einstellungen")
+![delay](Bilder/delay.jpg "Delay Einstellungen")
 
 Nun sind alle Einstellungen getätigt und über einen Tastendruck wird per Telegram der Wert des Joysticks direkt aufs Handy gesendet. Darüber hinaus kann man live den Joystick-Wert auch im Dashboard ansehen.
 So sieht der Aufbau umgesetzt aus:
