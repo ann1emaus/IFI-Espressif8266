@@ -19,7 +19,7 @@ Hardware Komponenten für das Projekt:
 ![schaltplan](Bilder/Schaltplan_Steckplatine.png "Schaltplan")
 In der obigen Abbildung ist der Schaltplan dargestellt. Neben den Versorgungsleitungen (rot für 3,3V und blau für GND) muss der des analogen Pins von der horizontalen Achse des Joysticks an Pin A0 des ESP8266 angeschlossen werden. Da es leider keinen weiteren analogen Eingang gibt, kann die Vertikalachse nicht mit eingebunden werden. Der digital Pin für den Taster des Joysticks ist an Pin D4 und die Datenleitung für die 8x8 RGB LED Matrix ist an Pin D2 des ESP8266 anzuschließen.
 
-###1. Einrichten des MQTT Servers auf dem RPi mit Node-Red
+### 1. Einrichten des MQTT Servers auf dem RPi mit Node-Red
 Auf dem RPi muss das Betriebssystem Raspbian mit Desktop laufen und eine Verbindung mit dem Internet und lokalen Netzwerk hergestellt haben. Um zu erfahren, wie man Raspbian installiert und einrichtet, verweise ich auf den Artikel: [https://www.heise.de/make/artikel/Raspberry-Pi-einrichten-3327906.html](https://www.heise.de/make/artikel/Raspberry-Pi-einrichten-3327906.html)
 
 Nachdem der RPi nun läuft, empfiehlt es sich jetzt eine SSH Verbindung mit diesem aufzubauen, um ihn bequem am PC zu konfigurieren. Dies kann man über das Programm Putty ([Download Putty](https://www.putty.org)) realisieren.
