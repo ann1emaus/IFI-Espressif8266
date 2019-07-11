@@ -1,6 +1,7 @@
-# IFI-Espressif8266
-Ein Projekt im Rahmen des Moduls "SystemSoftware" der IFI's an der HS Bremen 
-#Pfisterer
+# IFI-Espressif8266 und Raspberry Pi 3
+
+Im Rahmen der 2. Veranstaltungswoche des Moduls „Systemnahe Software“, ist ein Arduino Projekt erstellt worden. Dieses ist am Ende der Veranstaltung vollfunktionsfähig gewesen, doch wurde in den darauffolgenden Wochen durch eine umfangreichere Version ersetzt. 
+Die Blockveranstaltung gab den Anreiz, sich mit der Materie ausgiebiger zu Beschäftigen. Infolgedessen entstand in häuslicher Gruppenausarbeitung das nachfolgende Projekt. 
 
 Das Projekt besteht im wesentlichen aus drei Aufgaben, die es zu lösen gilt.
 1. Einrichten des MQTT Servers auf dem Raspberry Pi (RPi) mit Node-Red
