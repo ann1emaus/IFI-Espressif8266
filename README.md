@@ -38,7 +38,7 @@ Und zu guter Letzt:
 
 >sudo service nodered restart
 
-#### Node-Red starten und einrichten
+### Node-Red starten und einrichten
 Jetzt ist es Zeit, das erste Mal Node-Red zu starten. Dazu startet man den Browser und gibt die lokale IP-Adresse mit dem Port 1880 ein.
 
 ![Node-Red Oberfläche](Bilder/Node-Red.jpg "Node-Red Oberfläche")
@@ -314,7 +314,7 @@ angezeigt. Nun müssen im Chatfenster des erstellten Bots ein paar Nachrichten v
 
 Die "id" wichtig für die Einstellungen in Node-Red.
 
-#### Zurück zu Node-Red
+### Zurück zu Node-Red
 Nun kann man in Node-Red den Funktionblock "Telegram sender" aus der Leiste ziehen und die nötigen Einstellungen konfigurieren. Es muss der Bot-Name, Token (API) und die Chat-ID eingetragen werden.
 Damit ist Node-Red in der Lage, Telegram-Nachrichten über den Bot an ein mobiles Endgerät zu schicken.
 Es muss nun noch ein function Block aus der Leiste gezogen und wie folgt konfiguriert werden:
