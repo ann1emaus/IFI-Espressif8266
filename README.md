@@ -326,5 +326,5 @@ Bisher existiert noch keine Entprellung des Tasters. Damit der Telegram-Chat nic
 
 Nun sind alle Einstellungen getätigt und über einen Tastendruck wird per Telegram der Wert des Joysticks direkt aufs Handy gesendet. Darüber hinaus kann man live den Joystick-Wert auch im Dashboard ansehen.
 So sieht der Aufbau umgesetzt aus:
-![foto](foto.jpg "Aufbau")
+![foto](foto.jpeg "Aufbau")
 
