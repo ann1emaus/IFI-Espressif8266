@@ -329,5 +329,5 @@ Nun sind alle Einstellungen getätigt und über einen Tastendruck wird per Teleg
 So sieht der Aufbau umgesetzt aus:
 
 
-![foto](foto.jpeg "Aufbau")
+![foto](Bilder/foto.jpeg "Aufbau")
 
