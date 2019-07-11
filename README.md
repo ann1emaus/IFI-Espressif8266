@@ -323,3 +323,8 @@ Es muss nun noch ein function Block aus der Leiste gezogen und wie folgt konfigu
 Bisher existiert noch keine Entprellung des Tasters. Damit der Telegram-Chat nicht mit einer Fülle von Nachrichten pro Taster-Druck geflutet wird, kann mittels des Funktionsblocks "delay" der Durchsatz an Nachrichten reduziert werden. Dafür wurden folgende Einstellungen getätigt:
 
 ![delay](delay.jpg "Delay Einstellungen")
+
+Nun sind alle Einstellungen getätigt und über einen Tastendruck wird per Telegram der Wert des Joysticks direkt aufs Handy gesendet. Darüber hinaus kann man live den Joystick-Wert auch im Dashboard ansehen.
+So sieht der Aufbau umgesetzt aus:
+![foto](foto.jpg "Aufbau")
+
